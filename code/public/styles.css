@@ -1,0 +1,235 @@
+.body {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUPEhIVFRUVFRUVFRUVFRgVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQIDBAf/xAAoEAEBAAIABgICAgIDAAAAAAAAAQIREiExYXHwA1GBoZHxsdFBweH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A8ZyvNOzy60gGxKABynKWjgDapUmCuIbKGB7GwrQJ4j4ho5iB7PYmPc9eATtW+414GgFypWnrwNAnZbWVgM+IbOwcPcCtK1VhUE7Fy7gtAe02mQEW1FYBbEoGgG23xXkxa/FeQIz6kefWkAALQKNMitANK0UipALSpBo5APR8IkVJATpUPQmIHJ5GjmPY5iBcJ8C5gdw7Ax4TkXwDhBGv+E2NeHsWUn0DGwl5RNxBNiaqwtAnRWL4U2AjR6PRASVaKgQLQA2vxdGLX4pyBOc51J5dS0AOQrDA5D0UPYGqVMXIBye+xUxTpcvYD0YkXjgCZiuYCYKkA+ATH32Kk8D+ALV9/ob99isZ4XMQRw++wuCL1oW36BnlGeTfhTcAYXEcC7h3TQZ5YpuLTL8M6CaXvvJRWAmwtGVBNSqwrAToaGgA01+Loxta/F0Bnn1ogy60AYJUoAxFbAYrxqdqgKiomLA4vGIjSe+7BWjkEvvtXjQHD4EjWD33mCcVy+BKclBM95prS/31Tn77sGei0vn7/ab77sGeURY0yvvtK2gxyjOujJllQRanKqqaCamq2igRUyAiPYBNa/F0ZtfivIGWXWkrPqAAgOUDBwwKVeJSLxgLkVJ2LHFpPAFIvHETGe6XiAkXPyWPhrL2BMnk+fdpj4OY9gRjfLTHHvTmPZcw9oIsRce1/bfgn1/hOWM+gc9x8p4W1xnuk5QHPYnL8tbeycvAMMts63y8M8p2BlvyWu67E3EGdTY0sTlAZ2FV1NBJK2QJafF0RWvxdAZ5dS0efUgByg4ByqhHAVtUqIqA0i4zmmmN92C8VzFE/DTHQCbaSp5fTTHQLxrTG1Gp9KnYFbq9s5Z7Vcvb/wCgdhZ0bntTv3YJsZ5z8tLfFRde0GN2i5Nck3X0DPKoytXlpnkCLUWqtRkBJp2lQTYmqpUEDZgCa/F0ZNfi6AjLqmHledEoA5S2AVKraIqAqLiZFwFSrwrORcoNZWkvvtZY1pxAra5mz4jlB0Y5+6OZMsfK8aDWZK2iKvkCtEyTfJXPsB5Zf49/5Z5X32r4vdozzBnlki5nlkzyoDLJnlVXymgmoyWjIGdGxS2BbTVbTaCdjYIBtr8XRi2+LoCM7zqTy6kB7OEAXKaQC5o4mLxBeFa41iqeQbb8/v8A0cvvNnK0xsBeOX3/ANtMcvebGaVKDomW/v8AY398/wCWOzlBryPfvP8A0zxaQFzLvf2dyuv7Y3IvyCs75/f+meWV7/scU+itn0Cbl3/yOLz+05WItBWTLOwZVFAr2TtRUCLKlU0CqbVFQSNikAa/F0Y1r8XQGeXWiDLrSAzScBUh6I9gcXGcqoDSGiGDSVpKw2uUG0VGG145A3kLSJl3g4u8BrPpUve+/hhjl3VuA13ftOfJFqcqC9lv32M9lcgXkmotFvcBlEWHcu7O5AdKkQBJpoAiFAFoABY1+GcmNafFeQIz6krO807AxC2ewMaEpwAqUjgKlOFKfEBxUTs+IFxXNlMlcXcGhFs55A5auZM9qmQK2Km5+8hcu4FaKVzTcwNORcRXIBlEVVpUEjY2LQKlT2VoJFFpWgCPYAtNfinJk2+KcgZZdSPOcyAACAcOEYA9kYHKraDgLg2RgD/kjgKlOVIBWz40DYL4hcu6NiArZWkWwL+RzAAbKnU0BstggGyAAVNMAkxoAGvxdGZ45aBp8nVnAAMQAAdAAYrAA6eIAHmUAAVQACDIwB4qgAFkeAAM8wYBIoAFE3qABgAEU8ugAM00wAAACniYB//Z');
+    background-size: 100% 100%;
+    min-height: 80vh;
+    overflow: hidden;
+    zoom: 100%;
+}
+.main-div {
+    background-color: rgba(255, 255, 255, .3);
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    
+}
+
+.data {
+  visibility: hidden
+}
+
+.topic {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 3vw;
+    text-align: center;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.title {
+    top: 15%;
+    height: 6.5%;
+}
+
+.input {
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1.25vw;
+    background-color: black;
+    color: white;
+    font-size: 80%;
+}
+
+.description {
+    top: 20vh;
+    padding-top: 1vh;
+    height: 20%;
+}
+
+.image {
+    top: 51%;
+    height: 5vh;
+}
+
+.color {
+    height: 5vh;
+    width: 76%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 61%;
+    background-color: black;
+
+}
+
+.button {
+    height: 13%;
+    width: 76%;
+    top: 71%;
+    font-size: 4vh;
+    background-color:black;
+    display: block;
+    font-weight: 600;
+    color: white
+}
+
+.button:hover {
+    cursor: pointer;
+    animation-name: test;
+    animation-duration: 1s;
+    width: 80%;
+    height: 16%;
+    background-color: grey;
+}
+
+/* Mobile Configuration */
+@media screen and (max-width:700px) {
+    .button {
+        font-size: 3vw;
+/*         width: 70% */
+    }
+    .main-div {
+      width: 80%;
+    }
+}
+
+.popup {
+    background-color: rgba(0, 0, 0, .89);
+    width: 150vh;
+    height: 60vh;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.uUrl {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    /* top: 50%; */
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.url {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    margin-top: 10vh;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+.copyButton {
+    border-radius: 10px;
+    display: block;
+    width: 10vw;
+    height: 10vh;
+    margin-top: 30vh;
+    background-color: #90EE00;
+    border: none;
+    font-size: 2vw;
+    margin-left: 10vw;
+}
+
+.closeButton {
+    border-radius: 10px;
+    display: block;
+    width: 10vw;
+    height: 10vh;
+    margin-top: -10vh;
+    margin-left: 63vw;
+    background-color: #90EE00;
+    font-size: 2vw;
+    border: none;
+}
+.closeButton:hover {
+    cursor: pointer;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 12vw;
+    height: 12vh;
+    background-color: green;
+}
+.copyButton:hover {
+    cursor: pointer;
+    animation-name: anim;
+    animation-duration: 1s;
+    width: 12vw;
+    height: 12vh;
+    background-color: green;
+}
+
+@keyframes test {
+    from {width: 76%; height: 13%;}
+    to { width: 80%; height: 16%; background-color: grey; }
+}
+
+@keyframes anim {
+    from {
+        width: 10vw;
+        height: 10vh;
+        background-color: #90EE00; 
+    }
+    to {
+        width: 12vw;
+        height: 12vh;
+        background-color: green;    
+    }
+}
+.href {
+    color: white;
+}
+.copyright {
+    margin: 0;
+    position: absolute;
+    top: 98%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
