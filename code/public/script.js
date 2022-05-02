@@ -102,4 +102,32 @@ button.addEventListener('click', async() => {
     })
 })  
 
+const viewChangesButton = document.getElementById('viewChanges');
 
+viewChangesButton.addEventListener('click', () => {
+    
+    
+        const div = document.createElement('div');
+        const btn = document.createElement('button');
+        btn.classList.add('closeChanges')
+        btn.id = 'closeChanges';
+        btn.innerText = '❌';
+        btn.style.fontSize = 300;
+        btn.style.backgroundColor = 'black';
+        btn.style.outline = 'none';
+        btn.style.border = 'none';
+        
+        div.appendChild(btn)
+        // div.innerText = 'This is a test';
+        div.style.color = 'white';
+        div.classList.add('viewChangeDiv');
+        const h3 = document.createElement('h3');
+        h3.classList.add('viewChangesText')
+        h3.innerText = '1.0 - Launch\n1.1 - Changed style of the page\n1.2 - Made an id system'
+        div.appendChild(h3)
+        document.body.appendChild(div);
+        btn.addEventListener('click', () => {
+            div.remove()
+        })
+    
+})
