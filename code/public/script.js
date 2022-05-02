@@ -3,22 +3,46 @@ const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const lowercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.toLowerCase().split('')
 const button = document.getElementById('submit');
 
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}
+
+
 
 document.getElementById('color').value = '#FFFFFF'
 button.addEventListener('click', async() => {
+    function postIdWithEmbed(id, title, description, color, image) {
+        fetch('https://EmbedGenerator.kooterman.repl.co/database/post', {
+        method: 'POST',
+        body: JSON.stringify({
+          id,
+          title,
+          description,
+          color,
+          image,
+        }),
+        headers: {
+          'Content-Type': 'application/json; charset=UTF-8',
+        }
+      }).then(res => res.text()).then(console.log)
+    }
     button.remove()
     const title = document.getElementById('title').value
     const description = document.getElementById('description').value
     const image = document.getElementById('image').value
     const color =  document.getElementById('color').value;
-    const url = `https://embedgenerator.kooterman.repl.co/embeds/${JSON.stringify({
-        'title': title ?? null,
-        'description': description ?? null,
-        'image': image ?? null,
-        'color': color ?? null,
-    }).replace('#', '').replace(/\ /g, '%20')}`
 
+    const id = makeid(6)
+    const url = `https://embedgenerator.kooterman.repl.co/embeds/${id}`
 
+  	postIdWithEmbed(id, title, description, color, image); 
     const div = document.createElement('div');
     div.classList.add('popup');
     div.id = 'newDiv'
