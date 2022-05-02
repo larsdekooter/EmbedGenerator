@@ -2,7 +2,7 @@
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 const lowercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.toLowerCase().split('')
 const button = document.getElementById('submit');
-
+//make the id for the database
 function makeid(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -15,9 +15,10 @@ function makeid(length) {
 }
 
 
-
+//set the color of the color input to white, otherwise it is just a black bar
 document.getElementById('color').value = '#FFFFFF'
 button.addEventListener('click', async() => {
+    //post embed to the database
     function postIdWithEmbed(id, title, description, color, image) {
         fetch('https://EmbedGenerator.kooterman.repl.co/database/post', {
         method: 'POST',
@@ -34,6 +35,7 @@ button.addEventListener('click', async() => {
       }).then(res => res.text()).then(console.log)
     }
     button.remove()
+    //get the embed
     const title = document.getElementById('title').value
     const description = document.getElementById('description').value
     const image = document.getElementById('image').value
@@ -43,6 +45,7 @@ button.addEventListener('click', async() => {
     const url = `https://embedgenerator.kooterman.repl.co/embeds/${id}`
 
   	postIdWithEmbed(id, title, description, color, image); 
+    //create popup
     const div = document.createElement('div');
     div.classList.add('popup');
     div.id = 'newDiv'
