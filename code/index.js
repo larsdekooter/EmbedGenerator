@@ -13,15 +13,12 @@ const db = new Database()
 app.get('/', (request, response) => {
   console.log('Site opened D:')
   response.sendFile('index.html', { root: '.' })
-  // console.log(document.getElementById('color'))
   
 })
 
 
 app.get(/embeds/, (request, response) => {
-  // let decoded = JSON.parse(decodeURIComponent((request.url.slice(8) + '')));
   const id = request.url.slice(8);
-  console.log(id)
    db.get(id).then(embed => {
     response.send(`<html>
         <head>
@@ -37,7 +34,6 @@ app.get(/embeds/, (request, response) => {
         </html>`
   )  
   })
-  // console.log(decoded)
   
 })
 
@@ -49,8 +45,6 @@ app.get('/database/get', async (req, res) => {
 
 app.post('/database/post', jsonParser, async (req, res) => {
   res.send(req.body)
-  // database[req.body.id] = req.body;
-  // console.log(database)
   db.set(req.body.id, req.body).then(() => {})
 })
 
